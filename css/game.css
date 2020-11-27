@@ -28,7 +28,6 @@ img.main-logo {
 }
 
 .side-bar {
-  /* background-color: #1a0a26; */
   background-image: url(../img/nav_bar.png);
   background-repeat: repeat;
 }
@@ -111,8 +110,11 @@ h3#score-title {
 
 #form {
   z-index: 7;
-  background-color: rgb(155, 155, 155);
-  border: 5px outset gray;
+  background-image: url(../img/nav_bar.png);
+  background-repeat: repeat;
+  border: 5px outset #2d1c3b;
+  border-radius: 6px;
+  color: #180d20;
 }
 
 #new-player-form {
@@ -133,6 +135,16 @@ h3#score-title {
 
 #new-player-form input {
   margin: 12px auto;
+}
+
+#submit {
+  background-color: #201329;
+  padding: 3px;
+  border-color: #2d1c3b;
+  border-radius: 5px;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 3px;
+  color: aliceblue;
 }
 
 /* The board */
@@ -191,7 +203,6 @@ h3#score-title {
 #world-one {
   height: 360px;
   width: 360px;
-  /* background-color: seagreen; */
   background-image: url(../img/locations/krcmarek-planet.png);
   background-size: 360px 360px;
   border-radius: 50%;
@@ -319,11 +330,6 @@ h3#score-title {
   z-index: 1;
 }
 
-.final-choice {
-  border: 1px solid black;
-  box-shadow: 0 0 8px 10px rgb(155, 214, 238);
-}
-
 /* navigation choice halos */
 
 .easy-choice {
@@ -339,6 +345,11 @@ h3#score-title {
 .hard-choice {
   border: 12px solid black;
   box-shadow: 0 0 60px 120px orangered;
+}
+
+.final-choice {
+  border: 1px solid black;
+  box-shadow: 0 0 8px 10px rgb(155, 214, 238);
 }
 
 /* event card styling */
